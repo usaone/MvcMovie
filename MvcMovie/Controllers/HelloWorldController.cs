@@ -5,34 +5,9 @@ namespace MvcMovie.Controllers
 {
     public class HelloWorldController : Controller
     {
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        //
-        // GET: /HelloWorld/
-
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is my default action...";
-        }
-
-        //
-        // GET: /HelloWorld/Welcome
-
-        public string Welcome(string name, int id = 1)
-        {
-            //return "This is the Welcome action method...";
-            return HtmlEncoder.Default.Encode($"Hello {name}, id is: {id}");
-        }
-
-        //
-        // GET: /HelloWorld/Update/id
-
-        public string Update(int id)
-        {
-            return "This is the Update action for id = " + id;
+            return View();
         }
     }
 }
